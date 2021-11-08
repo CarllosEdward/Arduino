@@ -1,0 +1,81 @@
+/*********************************************************************************************
+**********************************************************************************************
+Programa Exemplo para WeMos D1 R1 ************************************************************
+Autor: Carlos Cordeiro ***********************************************************************
+**********************************************************************************************
+**********************************************************************************************/
+
+void setup()
+{
+
+  //Definição das portas digitais
+
+  pinMode(16, OUTPUT);            //D0
+  pinMode(5, OUTPUT);             //D1
+  pinMode(4, OUTPUT);             //D2
+  pinMode(0, OUTPUT);             //D3
+  pinMode(2, OUTPUT);             //D4
+  pinMode(14, OUTPUT);            //D5
+  pinMode(12, OUTPUT);            //D6
+  pinMode(13, OUTPUT);            //D7
+  pinMode(15, OUTPUT);            //D8
+
+// Alterando o nome das portas do Wemos conforme a placa
+
+  #define D0 16
+  #define D1 5
+  #define D2 4
+  #define D3 0
+  #define D4 2
+  #define D5 14
+  #define D6 12
+  #define D7 13
+  #define D8 15
+
+}
+
+
+void loop()
+{
+
+  // Teste das portas digitais
+
+  //Teste Sequencial
+
+
+  digitalWrite(D1, HIGH);           
+  delay (1000);
+  digitalWrite(D1, LOW);
+  
+  digitalWrite(D2, HIGH);           
+  delay (1000);
+  digitalWrite(D2, LOW);
+  
+  digitalWrite(D3, HIGH);           
+  delay (1000);
+  digitalWrite(D3, LOW);
+  
+  digitalWrite(D4, HIGH);           
+  delay (1000);
+  digitalWrite(D4, LOW);
+  
+  digitalWrite(D5, HIGH);           
+  delay (1000);
+  digitalWrite(D5, LOW);
+  
+  digitalWrite(D6, HIGH);           
+  delay (1000);
+  digitalWrite(D6, LOW);
+  
+  digitalWrite(D7, HIGH);           
+  delay (1000);
+  digitalWrite(D7, LOW);
+  
+  digitalWrite(D8, HIGH);           
+  delay (1000);
+  digitalWrite(D8, LOW);
+  
+  delay(1000);
+
+
+}
